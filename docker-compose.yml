@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  proto:
+    command: ./proto/scripts/protoc.sh
+    build:
+      context: .
+      dockerfile: DockerfileProto
+    volumes:
+      - .:/proto
